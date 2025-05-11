@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style-type:none;
+    box-sizing:border-box;
+  
+
+}
+
+.navbar{
+   
+    height:70px;
+    width:100%;
+    background:red;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 50px;
+}
+
+.left{
+    display:flex;
+    flex-direction:row;
+    background:orange;
+    gap:50px;
+
+}
+
+.links ul{
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+
+}
+
+.right{
+    button{
+        background:blue;
+        height:50px;
+        width:70px;
+        border:none;
+    }
+}
