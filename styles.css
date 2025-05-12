@@ -12,7 +12,7 @@
    
     height:70px;
     width:100%;
-    background:red;
+    background:gray;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -22,8 +22,14 @@
 .left{
     display:flex;
     flex-direction:row;
-    background:orange;
+    /* background:orange; */
     gap:50px;
+
+    span{
+        color:white;
+
+      
+    }
 
 }
 
@@ -32,13 +38,77 @@
     flex-direction:row;
     gap:30px;
 
+    >li a{
+        color:white;
+
+    }
+
+
 }
 
 .right{
     button{
-        background:blue;
-        height:50px;
-        width:70px;
+        background:white;
+        padding:8px 12px;
+        outline:none;
         border:none;
+        border-radius:10px;
     }
+}
+
+
+.hero-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:calc(100vh - 70px);
+    background:gray;
+    width:100%;
+    /* padding:50px; */
+
+    .left-hero{
+        width:50%;
+        /* background:gray; */
+        display:flex;
+        flex-direction:column;
+        gap:50px;
+        padding:50px;
+
+        .content-inside{
+            display:flex;
+            flex-direction:column;
+            gap:50px;
+        }
+
+        .btns{
+            display:flex;
+            flex-direction:row;
+            gap:30px;
+
+            >button{
+                padding:10px 20px;
+                border-radius:5px;
+                border:none;
+                outline:none;
+
+                &:first-child{
+                    background:yellowgreen;
+                }
+
+            }
+        
+        }
+
+    }
+
+    .right-hero{
+        padding:50px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+
+        width:50%;
+        background:gray;
+    }
+
 }
